@@ -213,36 +213,3 @@ html[data-loading] footer {
   pointer-events: none;
   opacity: 0;
 }
-
-/* Style for tablets (768px and up) */
-@media only screen and (min-width: 150px) {
-  svg {
-    width: 100vw;
-    height: 50vh;
-  }
-}
-
-/* Style for tablets (768px and up) */
-@media only screen and (min-width: 250px) {
-  svg {
-    width: 100vw;
-    height: 50vh;
-  }
-}
-
-
-/* Style for tablets (768px and up) */
-@media only screen and (min-width: 768px) {
-  svg {
-    width: 70vw;
-    height: 100vh;
-  }
-}
-
-/* Style for desktops (1024px and up) */
-@media only screen and (min-width: 1024px) {
-  svg {
-    width: 40vw;
-    height: 100vh;
-  }
-}
