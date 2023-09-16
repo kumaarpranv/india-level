@@ -215,10 +215,18 @@ html[data-loading] footer {
 }
 
 /* Style for tablets (768px and up) */
+@media only screen and (min-width: 150px) {
+  svg {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+/* Style for tablets (768px and up) */
 @media only screen and (min-width: 250px) {
   svg {
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
   }
 }
 
@@ -226,7 +234,7 @@ html[data-loading] footer {
 /* Style for tablets (768px and up) */
 @media only screen and (min-width: 768px) {
   svg {
-    width: 100vw;
+    width: 70vw;
     height: 100vh;
   }
 }
