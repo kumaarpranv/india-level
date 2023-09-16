@@ -757,7 +757,7 @@ const 获取字体样式 = (字体名,回调)=>{
 });
 
 const 宽 = 1210;
-const 高 = 1249;
+const 高 = 1270;
 const 比 = 2;
 
 const 画板 = 新建元素('canvas');
