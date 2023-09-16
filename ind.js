@@ -105,7 +105,7 @@ const messages = {
             Wisconsin: '威斯康辛',
             Louisiana: '路易斯安那',
             Arkansas: '阿肯色',
-            Mississippi: '密西西比',
+            Mississippi: '密西西scale',
             Iowa: '爱荷华',
             Minnesota: '明尼苏达',
             Kansas: '堪萨斯',
@@ -163,7 +163,7 @@ const messages = {
             New_Jersy: '紐澤西',
             Delaware: '德拉瓦',
             Virginia: '維吉尼亞',
-            DC: '華盛頓哥倫比亞特區',
+            DC: '華盛頓哥倫scale亞特區',
             West_Virginia: '西維吉尼亞',
             Kentucky: '肯塔基',
             North_Carolina: '北卡羅來納',
@@ -175,7 +175,7 @@ const messages = {
             Wisconsin: '威斯康辛',
             Louisiana: '路易斯安那',
             Arkansas: '阿肯色',
-            Mississippi: '密西西比',
+            Mississippi: '密西西scale',
             Iowa: '愛荷華',
             Minnesota: '明尼蘇達',
             Kansas: '堪薩斯',
@@ -756,14 +756,14 @@ const 获取字体样式 = (字体名,回调)=>{
     setTimeout(_=>如何做爱元素.removeAttribute('data-loading'),2e3);
 });
 
-const 宽 = 1000;
-const 高 = 1356;
-const 比 = 2;
+const width = 1000;
+const height = 1356;
+const scale = 1;
 
 const 画板 = 新建元素('canvas');
 
-画板.width = 宽 * 比;
-画板.height = 宽 * 比;
+画板.width = width * scale;
+画板.height = height * scale;
 
 const 上下文 = 画板.getContext('2d');
 
@@ -788,20 +788,20 @@ const 地址变图像元素 = (地址,回调)=>{
 const 日志 = _=>(新建图()).src = `https://lab.magiconch.com/api/china-ex/log?levels=${获取所有省等级们().join('')}`;
 
 const 保存图像 = _=>{
-    const 文档文本 = `<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${宽} ${高}" width="${宽}px" height="${高}px">${图形.innerHTML}</svg>`;
+    const 文档文本 = `<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}px" height="${height}px">${图形.innerHTML}</svg>`;
     const 数据地址 = 从文档文本新建图形文件(文档文本);
     地址变图像元素(数据地址,图=>{
         上下文.fillStyle = 如何做爱元素.style.backgroundColor; //'#b4b4ef';
         上下文.fillRect(
             0,0,
-            宽 * 比,宽 * 比
+            width * scale,height * scale
         );
         上下文.drawImage(
             图,
             0,0,
-            宽,高,
-            0,(宽 - 高) * 比 / 2,
-            宽 * 比, 高 * 比
+            width,height,
+            // 0,(width - height) * scale / 2,
+            // width * scale, height * scale
         );
         画板.toBlob(元素数据=>{
             const 地址 = URL.createObjectURL(元素数据);
