@@ -19,7 +19,7 @@ svg {
   margin-right: auto;
   pointer-events: none;
 }
-svg #地名 {
+svg #cl {
   pointer-events: none;
 }
 a {
@@ -109,7 +109,7 @@ a {
 #levels a[data-level="0"][alt] {
   background: #d6beff;
 }
-.按钮 {
+.dl {
   background: #FFF;
   box-shadow: 0 0 0 2px #111;
   border-radius: 3px;
@@ -131,7 +131,7 @@ footer a {
   padding: 4px 4px;
   margin-left: 3px;
 }
-footer a.按钮 {
+footer a.dl {
   margin-left: 6px;
 }
 #mobid {
@@ -156,7 +156,7 @@ footer a.按钮 {
   margin: 0 auto;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
-#mobid .按钮 {
+#mobid .dl {
   padding: 8px 12px;
   box-shadow: 0 0 0 2px #111;
 }
@@ -172,7 +172,7 @@ footer a.按钮 {
   footer a {
     padding: 6px 8px;
   }
-  .按钮 {
+  .dl {
     box-shadow: 0 0 0 2px #111;
   }
   #levels {
